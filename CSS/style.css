@@ -1,0 +1,334 @@
+/* General del header */
+header {
+    display: flex;               /* Activa diseño en fila */
+    justify-content: space-between; /* Distribuye logo y menú */
+    align-items: center;         /* Centra verticalmente */
+    padding: 10px 40px;          /* Espaciado interno */
+    border-bottom: 2px solid #4CAF50; /* Línea verde inferior */
+    background-color: #fff;      /* Fondo blanco */
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+        display: flex;
+        align-items: center;
+        gap: 12px; /* espacio entre el logo y el nombre */
+}
+
+/* Título principal (BRITA) */
+header h1 {
+    font-size: 28px;
+    color: #2E7D32;   /* Verde oscuro (puedes ajustar) */
+    margin: 0;
+}
+
+/* Logo */
+header figure {
+    margin: 0;
+}
+header figure img {
+    height: 60px; /* Ajusta tamaño del logo */
+    width: auto;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;   /* Quita viñetas */
+    margin: 0;
+    padding: 0;
+    display: flex;      /* Menú en fila */
+    gap: 20px;          /* Espaciado entre enlaces */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2E7D32; /* Verde al pasar el cursor */
+    border-bottom: 2px solid #2E7D32;
+}
+
+/* =====================
+   QUIÉNES SOMOS
+===================== */
+#quienes\ somos {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#quienes\ somos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Imagen principal */
+#quienes\ somos img {
+    display: block;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Cada artículo (historia, misión, visión, objetivos) */
+#quienes\ somos article {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos dentro de los artículos */
+#quienes\ somos h3 {
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+/* Lista de objetivos */
+#quienes\ somos ul {
+    padding-left: 20px;
+}
+
+#quienes\ somos ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* =====================
+   FRASE DEL DÍA
+===================== */
+#frase\ del\ dia {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    text-align: center;
+}
+
+#frase\ del\ dia h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Estilo de la cita */
+#frase\ del\ dia blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #34495e;
+    background: #ffffff;
+    border-left: 6px solid #16a085;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* Autor de la frase */
+#frase\ del\ dia blockquote footer {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Texto explicativo */
+#frase\ del\ dia p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===================== NUESTRAS OBRAS ===================== */ 
+#ayudas { 
+    padding: 60px 20px; 
+    background-color: #f4f9f9; 
+} 
+
+#ayudas h2 { 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: #2c3e50; 
+} 
+#ayudas > p { 
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto 40px; 
+    font-size: 1.1rem; 
+    color: #555; 
+    line-height: 1.6; 
+} 
+/* GALERÍA: SOLO para los articles */ 
+#ayudas article { 
+    background: #ffffff; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease, 
+    box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+} 
+/* Efecto al pasar el mouse */ 
+#ayudas article:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15); 
+} 
+/* Imagen dentro de cada tarjeta */ 
+#ayudas article img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+} 
+/* Título dentro de cada tarjeta */ 
+#ayudas article h3 { 
+    margin: 15px; 
+    font-size: 1.3rem; 
+    color: #16a085; 
+} 
+/* Texto de cada tarjeta */ 
+#ayudas article p { 
+    margin: 0 15px 20px; 
+    color: #555;
+    line-height: 1.5; 
+    flex-grow: 1; 
+} 
+/* Contenedor galería SOLO para los artículos */ 
+#ayudas { 
+    display: grid; /* mantenemos el texto arriba normal */ 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+
+} #ayudas article { 
+    margin: 0 auto; /* centramos */ 
+} 
+
+#ayudas { 
+    display: block; 
+} 
+
+#ayudas > article { 
+    display: inline-block; 
+    width: 300px; 
+    vertical-align: top; 
+    margin: 15px; 
+} 
+
+#ayudas { 
+    text-align: center; 
+}
+
+/* =====================
+   CONTACTO
+===================== */
+#contactanos {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contactanos h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Contenedor del formulario */
+#contactanos form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Etiquetas */
+#contactanos label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Campos de entrada */
+#contactanos input,
+#contactanos textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar */
+#contactanos input:focus,
+#contactanos textarea:focus {
+    border-color: #16a085;
+    box-shadow: 0 0 5px rgba(22, 160, 133, 0.3);
+    outline: none;
+}
+
+/* Botón de enviar */
+#contactanos button {
+    background-color: #16a085;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contactanos button:hover {
+    background-color: #138d75;
+    transform: translateY(-2px);
+}
+
+#contactanos button:active {
+    transform: translateY(0);
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background-color: #2c3e50; /* azul oscuro elegante */
+    color: #ffffff; /* texto blanco */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+    position: relative; /* asegura que quede debajo si hay contenido */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Enlaces dentro del footer (si más adelante agregas) */
+footer a {
+    color: #16a085; /* verde corporativo */
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1abc9c;
+}
